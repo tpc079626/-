@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 導覽列 html -->
+  <div class="container">
+
+  </div>
+
+
+
+
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+  <!-- 導覽列 html -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary  fixed-top">
+    <a class="navbar-brand" href="#">旅遊網站</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbarSupportedContent" class="collapse navbar-collapse  ms-3">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">項目1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">項目2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">項目3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img
+          src="https://tse4.mm.bing.net/th/id/OIP.jZjbnPftpnJsflA6DsDlrAHaEK?w=2560&h=1440&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Slide 1" /></div>
+      <div class="swiper-slide"><img
+          src="https://www.10wallpaper.com/wallpaper/1920x1200/1202/nordic_landscape-Beautiful_mountain_scenery_picture_1920x1200.jpg"
+          alt="Slide 2" /></div>
+      <div class="swiper-slide"><img
+          src="https://th.bing.com/th/id/R.a4fe495b945cd14ac27541bbfe5a914b?rik=PafC4zfY1LtrbA&riu=http%3a%2f%2fhk.best-wallpaper.net%2fwallpaper%2f1920x1080%2f1303%2fEvening-sunset-sky-clouds-hills-forest-grass-beautiful-scenery_1920x1080.jpg&ehk=dI99MNov%2fBLMLoVVVXF86xSzqMQhzudW5SeOmUQ0mdo%3d&risl=&pid=ImgRaw&r=0"
+          alt="Slide 3" /></div>
+      <div class="swiper-slide"><img
+          src="https://www.10wallpaper.com/wallpaper/1366x768/1301/HDR_mountainscape-Beautiful_scenery_wallpaper_1366x768.jpg"
+          alt="Slide 4" /></div>
+      <div class="swiper-slide"><img
+          src="https://www.10wallpaper.com/wallpaper/1920x1200/1202/nordic_landscape-Beautiful_mountain_scenery_picture_1920x1200.jpg"
+          alt="Slide 5" /></div>
+      <div class="swiper-slide"><img
+          src="https://th.bing.com/th/id/R.a4fe495b945cd14ac27541bbfe5a914b?rik=PafC4zfY1LtrbA&riu=http%3a%2f%2fhk.best-wallpaper.net%2fwallpaper%2f1920x1080%2f1303%2fEvening-sunset-sky-clouds-hills-forest-grass-beautiful-scenery_1920x1080.jpg&ehk=dI99MNov%2fBLMLoVVVXF86xSzqMQhzudW5SeOmUQ0mdo%3d&risl=&pid=ImgRaw&r=0"
+          alt="Slide 6" /></div>
+      <div class="swiper-slide"><img
+          src="https://www.10wallpaper.com/wallpaper/1366x768/1301/HDR_mountainscape-Beautiful_scenery_wallpaper_1366x768.jpg"
+          alt="Slide 7" /></div>
+      <div class="swiper-slide"><img
+          src="https://tse4.mm.bing.net/th/id/OIP.jZjbnPftpnJsflA6DsDlrAHaEK?w=2560&h=1440&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Slide 8" /></div>
+      <div class="swiper-slide"><img
+          src="https://www.10wallpaper.com/wallpaper/1920x1200/1202/nordic_landscape-Beautiful_mountain_scenery_picture_1920x1200.jpg"
+          alt="Slide 9" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
